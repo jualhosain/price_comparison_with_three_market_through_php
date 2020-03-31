@@ -1,5 +1,21 @@
 <?php 
-include "header.php";
+include "header.php";?>
+
+<style>
+
+span#productSelected {
+    width: 15px;
+    font-size: 10px;
+    transform: translate(43px, -21px);
+    background: #27a1a1;
+    border-radius: 100%;
+    color: white;
+    height: 15px;
+    padding-left: 3px;
+}
+  </style>
+<?php
+
 include 'menu.php';
 
 ?>

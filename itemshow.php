@@ -38,7 +38,14 @@ if($array == null){
                    <div class='cart-img'> <a href='#'> <img class='media-object img-responsive' src='upload/".$op['post_img']."' alt='..'> </a> </div>
                </div>
                <div class='media-body'>
-                   <h6 class='media-heading'>".$op['post_title']."</h6>
+                   <h6 class='media-heading' style='margin-top:8px;'>".$op['post_title']."</h6>
+                   <button class='btnOurFoot' style='height: 3rem;
+                   background: #2d3a4b;
+                   border: none;
+                   color: white!important;
+                   font-size: 1.3rem;
+                   padding: 0.6rem 1rem;
+                   cursor: pointer;' >Delete</button>
                </div>
            </li> " ;
    
