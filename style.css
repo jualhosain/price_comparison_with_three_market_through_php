@@ -7,3 +7,11 @@
 .icon{
     display:inline-block;
 }
+
+button.btnOur {
+    width: 4.3rem;
+    height: 3rem;
+    background: #2d3a4b;
+    border: none;
+    color: white;
+}

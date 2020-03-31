@@ -60,8 +60,7 @@ $(document).ready(function(){
 
      let comparebtn = document.querySelector('#btnCompare');
      comparebtn.addEventListener('click',function(){
-         $.post('compare.php',{checkdata: check},function(data, abc){  
-         });
+         $.post('compare.php',{checkdata: check});
      });
 
    if (window.performance.navigation.type == 1) {
