@@ -9,7 +9,6 @@
               $admin = new Admin();
               if (isset($_POST['post'])) {
                   $data = $_POST;
-                  $query = 'select * from table';
                   $admin->addPost($data);
               }
               ?>
@@ -23,8 +22,8 @@
   </div> 
   <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
 
-<div class="form-group pt-3">
-    <label for="post_title" class="cols-sm-2 control-label">title</label>
+<div class="form-group pt-3 my-4">
+    <label for="post_title" class="cols-sm-2 control-label "></label>
     <div class="cols-sm-10">
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
@@ -32,45 +31,47 @@
         </div>
     </div>
 </div>
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+<div class="input-group my-4">
+  <div class="input-group-prepend" style=" margin-right: -50px;">
+    <span class="input-group-text" id="inputGroupFileAddon01"></span>
   </div>
   <div class="custom-file">
     <input type="file" name="postImg" class="custom-file-input" id="inputGroupFile01"
       aria-describedby="inputGroupFileAddon01">
-    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+    <label class="custom-file-label" for="inputGroupFile01"><span class="material-icons" style="font-size: 20px; margin: 5px 6px 2px 0px; ">
+perm_media
+</span></label>
   </div>
 </div>
-<div class="form-group pt-3">
-    <label for="m_one" class="cols-sm-2 control-label">Market One Price</label>
+<div class="form-group my-4">
+    <label for="m_one" class="cols-sm-2 control-label"></label>
     <div class="cols-sm-10">
         <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+        <span class="input-group-addon"><i class="fa fa-money"></i></span>
             <input type="text" class="form-control" name="m_one" id="m_one" placeholder="Enter Market One Price"/>
         </div>
     </div>
 </div>
-<div class="form-group pt-3">
-    <label for="m_tow" class="cols-sm-2 control-label">Market Tow Price</label>
+<div class="form-group my-4">
+    <label for="m_tow" class="cols-sm-2 control-label"></label>
     <div class="cols-sm-10">
         <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+        <span class="input-group-addon"><i class="fa fa-money"></i></span>
             <input type="text" class="form-control" name="m_tow" id="m_tow" placeholder="Enter Market Tow Price"/>
         </div>
     </div>
 </div>
-<div class="form-group pt-3">
-    <label for="m_three" class="cols-sm-2 control-label">Market Three Price</label>
+<div class="form-group my-4">
+    <label for="m_three" class="cols-sm-2 control-label"></label>
     <div class="cols-sm-10">
         <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+        <span class="input-group-addon"><i class="fa fa-money"></i></span>
             <input type="text" class="form-control" name="m_three" id="m_three" placeholder="Enter Market Three Price"/>
         </div>    
     </div>
 </div>
-<div class="form-group ">
-    <button type="submit" class="btn btn-primary btn-lg btn-block login-button" name="post">ADD User</button>
+<div class="form-group my-4">
+    <button type="submit" class="btn btn-primary btn-lg btn-block login-button" name="post">ADD product</button>
 </div>
 
 </form>
