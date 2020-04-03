@@ -2,10 +2,6 @@
     <?php require_once("header.php");?>
        <!--- add User -->
        <?php
-              spl_autoload_register(function($classes){
-              require_once('class/'. $classes .'.php');
-            
-              });
               $admin = new Admin();
               if (isset($_POST['addUser'])) {
                   $data = $_POST;
@@ -30,7 +26,7 @@
     </div>
 </div>
 
-<div class="form-group pt-3">
+<div class="form-group pt-3 mt-4">
     <label for="username" class="cols-sm-2 control-label">Username</label>
     <div class="cols-sm-10">
         <div class="input-group">
@@ -39,7 +35,7 @@
         </div>
     </div>
 </div>
-<div class="form-group pt-3">
+<div class="form-group pt-3 my-4">
     <label for="password" class="cols-sm-2 control-label">Password</label>
     <div class="cols-sm-10">
         <div class="input-group">

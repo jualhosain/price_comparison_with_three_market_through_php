@@ -1,4 +1,18 @@
+<?php
+ob_start();
+spl_autoload_register(function($classes){
+  require_once('class/'. $classes .'.php');
 
+  });
+  if(!isset($_COOKIE['name'])){
+    header('location:login.php');
+  }
+$url = $_SERVER['PHP_SELF'];
+$url = explode('/',$url);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +22,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+    Sujon Kumar Shil
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -30,30 +44,36 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+      <div class="logo"><a href="" class="simple-text logo-normal">
+          w3csoft
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item  <?=end($url)=='index.php'?'active':''?>">
             <a class="nav-link" href="index.php">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item <?=end($url)=='add-user.php'?'active':''?> ">
             <a class="nav-link" href="add-user.php">
               <i class="material-icons">person</i>
               <p>Add User</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item <?=end($url)=='post.php'?'active':''?>">
             <a class="nav-link" href="post.php">
               <i class="material-icons">shop</i>
               <p>Add Product</p>
             </a>
           </li>
-          <li class="nav-item ">
+		  <li class="nav-item <?=end($url)=='post.php'?'active':''?>">
+            <a class="nav-link" href="add_offer.php">
+              <i class="material-icons">add_circle</i>
+              <p>Add Offer</p>
+            </a>
+          </li>
+          <li class="nav-item <?=end($url)=='logout.php'?'active':''?>">
             <a class="nav-link" href="logout.php">
               <i class="material-icons">logout</i>
               <p>Log out</p>
