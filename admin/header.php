@@ -22,7 +22,7 @@ $url = explode('/',$url);
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    w3csoft
+    Sujon Kumar Shil
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -65,6 +65,12 @@ $url = explode('/',$url);
             <a class="nav-link" href="post.php">
               <i class="material-icons">shop</i>
               <p>Add Product</p>
+            </a>
+          </li>
+		  <li class="nav-item <?=end($url)=='post.php'?'active':''?>">
+            <a class="nav-link" href="add_offer.php">
+              <i class="material-icons">add_circle</i>
+              <p>Add Offer</p>
             </a>
           </li>
           <li class="nav-item <?=end($url)=='logout.php'?'active':''?>">

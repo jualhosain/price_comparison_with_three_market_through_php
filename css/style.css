@@ -3419,8 +3419,7 @@ footer h6 {
 	letter-spacing: 1.5px;
 }
 footer {
-	padding: 120px 0;
-	padding-bottom: 60px;
+	padding:0px;
 	background: #171e27;
 	position: relative;
 	z-index: 1;
@@ -3472,7 +3471,7 @@ footer li a:hover {
 	text-align: center;
 	display: inline-block;
 	width: 100%;
-	margin-top: 100px;
+	margin:0px;
 }
 .rights p {
 	margin: 0px;

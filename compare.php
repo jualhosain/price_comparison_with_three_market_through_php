@@ -334,7 +334,7 @@
 										
 										status.textContent = '';
 										mapLink.href = `https://www.google.com/maps/dir/Rajshahi/${latitude},${longitude}/@24.376554,88.603269`
-										mapLink.textContent = "Check Distance 3"
+										mapLink.textContent = "Check Distance"
 									}
 									
 									function error() {
@@ -368,7 +368,7 @@
 										
 										status.textContent = '';
 										mapLink.href = `https://www.google.com/maps/dir/Rajshahi/${latitude},${longitude}/@24.376554,88.603269`
-										mapLink.textContent = "Check Distance 2"
+										mapLink.textContent = "Check Distance"
 									}
 									
 									function error() {
@@ -401,7 +401,7 @@
 										
 										status.textContent = '';
 										mapLink.href = `https://www.google.com/maps/dir/Rajshahi/${latitude},${longitude}/@24.376554,88.603269`
-										mapLink.textContent = "Check Distance 1"
+										mapLink.textContent = "Check Distance"
 									}
 									
 									function error() {
@@ -426,21 +426,21 @@
 						
 						<div class="container">
 							<div class="row">
-								<div class="col-4">
+								<div class="col-md-4 col-sm-12">
 									<div class="collapse" id="market1">
 										<div class="card card-body">
 											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.53047174095!2d88.57099650315703!3d24.38015002626135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1585728622250!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 										</div>
 									</div>	
 								</div>
-								<div class="col-4">
+								<div class="col-md-4 col-sm-12">
 									<div class="collapse" id="market2">
 										<div class="card card-body">
 											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.53047174095!2d88.57099650315703!3d24.38015002626135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1585728622250!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 										</div>
 									</div>
 								</div>
-								<div class="col-4">
+								<div class="col-md-4 col-sm-12">
 									<div class="collapse" id="market3">
 										<div class="card card-body">
 											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.53047174095!2d88.57099650315703!3d24.38015002626135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1585728622250!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

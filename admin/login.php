@@ -1,28 +1,27 @@
+
 <?php 
-
-if(isset($_COOKIE['name'])){
-    header('location:index.php');
-}
-// Load class
-spl_autoload_register(function($classes){
-require_once("class/".$classes.'.php');
-
-});
-// call login function form Admin class
-$admin = new Admin();
-if(isset($_POST['login'])){
-    $data = $_POST;
-$admin->logIn($data);
-
-}
-
+	if(isset($_COOKIE['name'])){
+		header('location:index.php');
+	}
+	// Load class
+	spl_autoload_register(function($classes){
+		require_once("class/".$classes.'.php');
+		
+	});
+	// call login function form Admin class
+	$admin = new Admin();
+	if(isset($_POST['login'])){
+		$data = $_POST;
+		$admin->logIn($data);
+		
+	}
+	
 ?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!------ Include the above in your HEAD tag ---------->
-
 <div class= "login-wrapper">
     <div id="login" class="">
         <h3 class="text-center text-white">Login form</h3>
@@ -35,19 +34,23 @@ $admin->logIn($data);
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
-                            </div>
+							</div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
                                 <input type="password" name="password" id="password" class="form-control">
-                            </div>
+							</div>
                             <div class="form-group text-center">
                                 <input type="submit" name="login" class="btn btn-info btn-md" value="submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>	
+							</div>
+							<div class="form-group text-center">
+								<a type="button" class="btn btn-primary btn-md" href="../index.php">Back To Home
+								</a>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
-    
